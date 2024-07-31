@@ -31,6 +31,9 @@ points <- read_sf('sample_points.geojson')
 #get values 
 values <- extract(cont_vars, points)
 
+#check point without info
+points[174,]
+
 #check for NAs
 NAs <- which(is.na(values))
 
